@@ -1,5 +1,5 @@
 {
-  "name": "gulp-starter-kit",
+  "name": "multipage_gulp_bundle",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axZerk/gulp-starter-kit.git"
+    "url": "git+https://github.com/gennadiy1970/multipage_gulp_bundle"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Gorbulin Gennadiy <gorbulin.gm@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/axZerk/gulp-starter-kit/issues"
+    "url": "https://github.com/gennadiy1970/multipage_gulp_bundle/issues"
   },
-  "homepage": "https://github.com/axZerk/gulp-starter-kit#readme",
+  "homepage": "https://github.com/gennadiy1970/multipage_gulp_bundle#readme",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.3",

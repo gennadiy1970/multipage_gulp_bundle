@@ -31,16 +31,17 @@ gulp.task('html', () =>
     )
     .pipe(gulp.dest('./build')),
 );
+
 gulp.task('pages-html', () =>
   gulp
-    .src('./src/pages/*.html')
+    .src('./src/html/pages/*.html')
     .pipe(rigger())
     .pipe(
       htmlmin({
         collapseWhitespace: true,
       }),
     )
-    .pipe(gulp.dest('./build/pages')),
+    .pipe(gulp.dest('./build/')),
 );
 
 gulp.task('styles', () =>
@@ -110,9 +111,8 @@ gulp.task('fonts', () =>
 );
 
 gulp.task('watch', () => {
-  gulp.watch('src/html/**/*.html', ['html']).on('change', browserSync.reload);
-  gulp.watch('src/pages/*.html', ['pages-html']).on('change', browserSync.reload);
-  gulp.watch('src/scss/**/*.scss', ['styles']);
+  gulp.watch('src/html/**/*.html', ['html', 'pages-html']).on('change', browserSync.reload);
+  gulp.watch(['src/scss/**/*.scss','src/html/components/**/*.scss'], ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
 });
 
