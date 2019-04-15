@@ -45,6 +45,6 @@
     "stylelint": "^9.2.0"
   },
   "dependencies": {
-    "natives": "^1.1.4"
+    "natives": "^1.1.6"
   }
 }
